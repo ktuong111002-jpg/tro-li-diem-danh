@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Điểm Danh QR - Trường PTDTNT Vĩnh Long</title>
+    <!-- Thêm thư viện Tailwind CSS để giao diện đẹp nhanh chóng -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Thư viện quét mã QR chuyên nghiệp -->
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+</head>
+<body class="bg-slate-100 min-h-screen flex flex-col items-center justify-center p-4">
+
+    <div class="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden p-6 text-center">
+        <h1 class="text-2xl font-bold text-blue-600 mb-2">ĐIỂM DANH HỌC SINH</h1>
+        <p class="text-sm text-slate-500 mb-6">Đưa mã QR thẻ học sinh trước camera để điểm danh</p>
+
+        <!-- Khung hiển thị camera quét QR -->
+        <div id="reader" class="w-full rounded-xl overflow-hidden border-2 border-dashed border-slate-300 mb-4"></div>
+
+        <!-- Khu vực hiển thị thông báo trạng thái -->
+        <div id="result-box" class="hidden p-4 rounded-xl text-white font-medium transition-all"></div>
+    </div>
+
+    <!-- Nhúng file mã nguồn JavaScript xử lý bên dưới -->
+    <script src="script.js"></script>
+</body>
+</html>
